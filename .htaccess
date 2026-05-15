@@ -1,9 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILANAME} -f [OR]
-    RewriteCond %{REQUEST_FILANAME} -d
-
-    RewriteRule \. (?:css|js|jpe?g|gif|png)$ - [L]
-    RewriteRule ^(.*)$ router.php?action=$1 [QSA,L]
-</IfModule>
-
