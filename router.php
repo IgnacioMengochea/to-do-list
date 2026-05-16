@@ -16,7 +16,7 @@ $params = explode('/' , $action);
 
 switch($params[0]){
     case'listar':
-        getTasks();
+        showTask();
         break;
 
     default:   
