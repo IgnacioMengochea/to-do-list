@@ -18,5 +18,7 @@
 
         $query = $db->prepare('INSERT INTO tareas(titulo, descripcion, prioridad) VALUES(?, ?, ?)');
         $query->execute([$title, $description, $priority]);
+
+        return $db->lastInsertId();
     }
 ?>

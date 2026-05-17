@@ -26,7 +26,13 @@ function addTask(){
     $description = $_POST['description'];
     $priority = $_POST['priority'];
 
-    insertTask($title, $description, $priority);
+    $id = insertTask($title, $description, $priority);    
+    
+    if($id){
+        header('Location: '. BASE_URL);
+    }else{
+        echo "Error al insertar la tarea...";
+    }
+    
 
-    echo "Se insertó la tarea con exito";
 }
