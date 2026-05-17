@@ -14,7 +14,7 @@ switch($params[0]){
     case'listar':
         showTask();
         break;
-    case'agregarTarea':
+    case'agregar':
         addTask();
         break;
     default:   
