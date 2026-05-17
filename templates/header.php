@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>TUDAI - TODOList</title>
-    <style>nav { display: flex; gap: 16px; } body { font-family: sans-serif; margin: 0; } header { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; border-bottom: 1px solid #ccc; }</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<header>
-    <h2 href="">TUDAI - TODOList</h2>
-    <nav>
-        <a href="listar">Tareas</a>
-        <a href="about">About</a>
-    </nav>
-</header>
+<div class="container">
+<nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">TUDAI - TODOList</a>
+    <div>
+        <a class="nav-link d-inline" href="listar">Tareas</a>
+        <a class="nav-link d-inline" href="about">About</a>
+    </div>
+</nav>
