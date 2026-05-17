@@ -19,3 +19,14 @@ function showTask(){
     <?php
     require_once 'templates/footer.php';
 }
+
+function addTask(){
+
+    $title = $_POST['title'];
+    $description = $_POST['description'];
+    $priority = $_POST['priority'];
+
+    insertTask($title, $description, $priority);
+
+    echo "Se insertó la tarea con exito";
+}

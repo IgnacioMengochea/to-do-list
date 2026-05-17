@@ -1,15 +1,15 @@
-<form action="add" method="POST" class="my-4">
+<form action="agregar" method="POST" class="my-4">
     <div class="row">
         <div class="col-9">
             <div class="form-group">
                 <label>Titulo</label>
-                <input name="title" type="text" class="form-control">
+                <input required name="title" type="text" class="form-control">
             </div>
         </div>
         <div class="col-3">
             <div class="form-group">
                 <label>Prioridad</label>
-                <select name="priority" class="form-control">
+                <select required name="priority" class="form-control">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

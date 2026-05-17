@@ -14,7 +14,9 @@ switch($params[0]){
     case'listar':
         showTask();
         break;
-
+    case'agregar':
+        addTask();
+        break;
     default:   
         echo"Error 404";
         break;
