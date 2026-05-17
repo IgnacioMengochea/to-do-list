@@ -5,10 +5,16 @@ function showTask(){
     require_once 'templates/header.php';
 
     $tasks = getTasks();
-    
-    foreach($tasks as $task){
-        echo $task ->titulo;
-    }
+    ?>
+    <ul class="list-group">
+    <?php foreach($tasks as $task){ ?>
+        <li class="list-group-item">
+            <b><?php echo $task ->titulo; ?></b> | (Prioridad <?php echo $task ->prioridad?>)
+        </li>
+    <?php } ?>
 
+    </ul>
+    
+    <?php
     require_once 'templates/footer.php';
 }
