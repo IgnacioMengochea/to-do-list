@@ -5,6 +5,7 @@ function showTask(){
     require_once 'templates/header.php';
 
     $tasks = getTasks();
+    require 'templates/form_alta.php';
     ?>
     <ul class="list-group">
     <?php foreach($tasks as $task){ ?>
