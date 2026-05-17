@@ -4,7 +4,7 @@ require_once './app/db.php';
 function showTask(){
     require_once 'templates/header.php';
 
-    $task = getTasks();
+    $tasks = getTasks();
     
     foreach($tasks as $task){
         echo $task ->titulo;
