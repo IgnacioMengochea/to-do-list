@@ -7,9 +7,9 @@
 </head>
 <body>
 <header>
-    <h2>TUDAI - TODOList</h2>
+    <h2 href="">TUDAI - TODOList</h2>
     <nav>
-        <a href="tareas">Tareas</a>
+        <a href="listar">Tareas</a>
         <a href="about">About</a>
     </nav>
 </header>

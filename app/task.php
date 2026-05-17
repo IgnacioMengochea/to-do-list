@@ -1,9 +1,14 @@
 <?php
+require_once './app/db.php';
 
 function showTask(){
     require_once 'templates/header.php';
+
+    $task = getTasks();
     
-    echo "Aca van todas las tareas...";
+    foreach($tasks as $task){
+        echo $task ->titulo;
+    }
 
     require_once 'templates/footer.php';
 }
