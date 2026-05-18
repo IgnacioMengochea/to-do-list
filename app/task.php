@@ -14,7 +14,7 @@ function showTask(){
             <b><?php echo $task ->titulo; ?></b> | (Prioridad <?php echo $task ->prioridad?>)
             </div>
             <div class="action">
-                <a href="eliminar/<?php echo $task->$id ?>" type="button" class='btn btn-danger ml-auto' >Borrar</a>
+                <a href="eliminar/<?php echo $task->id ?>" type="button" class='btn btn-danger ml-auto' >Borrar</a>
             </div>
         </li>
     <?php } ?>
