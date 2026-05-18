@@ -29,7 +29,7 @@ function addTask(){
     $id = insertTask($title, $description, $priority);    
     
     if($id){
-        header('Location: ./agregar');
+        header('Location: ./listar');
     }else{
         echo "Error al insertar la tarea...";
     }
