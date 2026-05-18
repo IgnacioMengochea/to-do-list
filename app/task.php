@@ -34,7 +34,7 @@ function addTask(){
     $id = insertTask($title, $description, $priority);    
     
     if($id){
-        header('Location: ./listar');
+        header('Location: ' . BASE_URL);
     }else{
         echo "Error al insertar la tarea...";
     }
@@ -44,5 +44,5 @@ function addTask(){
 
 function removeTask($id){
     deleteTask($id);
-    header('Location: ./listar');
+    header('Location: ' . BASE_URL);
 }
