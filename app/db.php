@@ -21,4 +21,10 @@
 
         return $db->lastInsertId();
     }
+    function deleteTask($id){
+        $db =getConection();
+
+        $query = $db->prepare('DELETE FROM tareas WHERE id = ?');
+        $query->execute([$id]);
+    }
 ?>

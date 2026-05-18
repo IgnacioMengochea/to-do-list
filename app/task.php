@@ -9,8 +9,13 @@ function showTask(){
     ?>
     <ul class="list-group">
     <?php foreach($tasks as $task){ ?>
-        <li class="list-group-item">
+        <li class="list-group-item item-task">
+            <div>
             <b><?php echo $task ->titulo; ?></b> | (Prioridad <?php echo $task ->prioridad?>)
+            </div>
+            <div class="action">
+                <a href="eliminar/<?php echo $task->$id ?>" type="button" class='btn btn-danger ml-auto' >Borrar</a>
+            </div>
         </li>
     <?php } ?>
 
@@ -38,5 +43,6 @@ function addTask(){
 }
 
 function removeTask($id){
-    var_dump($id);
+    deleteTask($id);
+    header('Location: ./');
 }
