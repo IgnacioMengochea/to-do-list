@@ -17,6 +17,9 @@ switch($params[0]){
     case'agregar':
         addTask();
         break;
+    case'eliminar':
+        removeTask($params[1]);
+        break;
     default:   
         echo"Error 404";
         break;

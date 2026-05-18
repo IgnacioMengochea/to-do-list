@@ -36,3 +36,7 @@ function addTask(){
     
 
 }
+
+function removeTask($id){
+    var_dump($id);
+}
