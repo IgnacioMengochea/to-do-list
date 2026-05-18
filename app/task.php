@@ -44,5 +44,5 @@ function addTask(){
 
 function removeTask($id){
     deleteTask($id);
-    header('Location: ./');
+    header('Location: ./listar');
 }
